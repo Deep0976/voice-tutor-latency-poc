@@ -1,0 +1,10 @@
+# Secrets — NEVER commit your real keys
+.env
+
+# Python virtual environment (large, machine-specific)
+.venv/
+__pycache__/
+*.pyc
+
+# Audio recordings, if you ever enable them
+recordings/

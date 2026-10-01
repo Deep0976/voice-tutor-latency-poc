@@ -1,0 +1,9 @@
+# Never ship secrets or local-only junk into the hosted image.
+.env
+.venv/
+__pycache__/
+*.pyc
+voice_samples/
+recordings/
+.git/
+.DS_Store

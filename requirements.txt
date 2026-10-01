@@ -1,0 +1,20 @@
+# Voice Tutor POC — Python dependencies (pinned to a known-good set).
+#
+# pipecat-ai is the voice-agent framework. The names in [brackets] are
+# "extras" — optional add-ons we need:
+#   openai      -> GPT-4o + gpt-4o-mini (the tutor's "brain" and the fast SLM)
+#   silero      -> detects when the student stops speaking (turn-taking)
+#   webrtc      -> self-hosted browser <-> server audio (LOCAL testing)
+#   sarvam      -> Sarvam speech-to-text (the "ears", Indian languages)
+#   elevenlabs  -> ElevenLabs text-to-speech (the "voice")
+#   daily       -> Daily cloud transport (used when HOSTED, for friends on any network)
+pipecat-ai[openai,silero,webrtc,sarvam,elevenlabs,daily]==1.4.0
+
+# The ready-made browser UI the Pipecat dev runner serves (the Connect page).
+pipecat-ai-prebuilt==1.0.3
+
+# Loads your API keys from the .env file (local only; hosting uses real env vars).
+python-dotenv==1.2.2
+
+# Devanagari -> Latin transliteration for the romanized transcript.
+indic-transliteration==2.3.82
